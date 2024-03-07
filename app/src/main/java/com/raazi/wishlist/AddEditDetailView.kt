@@ -41,7 +41,10 @@ fun AddEditDetailView(
                     "Update Wish"
                 else
                     "Add Wish"
-            )
+            ) {
+
+                navController.popBackStack()
+            } // lambda expression is moved out of the function parenthesis to accommodate better readability.
 
         }
 
@@ -70,7 +73,9 @@ fun AddEditDetailView(
             Spacer(modifier = Modifier.height(10.dp))
             Button(onClick = {
                 if(viewModel.wishTitleState.isNotEmpty() && viewModel.wishDescState.isNotEmpty()){
-
+                    /* TODO */
+                }else{
+                    /* TODO */
                 }
             }) {
                 Text(
