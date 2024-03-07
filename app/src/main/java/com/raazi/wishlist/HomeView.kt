@@ -74,7 +74,7 @@ fun WishItem(wish: Wish, onClick: () -> Unit) {
             .clickable { onClick() },
         elevation = CardDefaults.cardElevation(10.dp)
     ) {
-        Column(modifier = Modifier.padding(16.dp)) {
+        Column(modifier = Modifier.padding(16.dp).wrapContentSize()) {
                 Text(text = wish.title, fontWeight = FontWeight.ExtraBold)
                 Text(text = wish.description)
         }
