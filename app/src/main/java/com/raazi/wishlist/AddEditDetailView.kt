@@ -43,7 +43,7 @@ fun AddEditDetailView(
                     "Add Wish"
             ) {
 
-                navController.popBackStack()
+                navController.navigateUp()
             } // lambda expression is moved out of the function parenthesis to accommodate better readability.
 
         }
